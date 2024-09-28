@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jumat</title>
+    <link rel="stylesheet" href="StyleSetTimer.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul id="menu-list" class="hidden">
+        <i class="ph ph-house" id="iconHome"></i>
+        <li class="hideInMobile"><a href="#">Penyiraman</a></li>
+        <li class="hideInMobile"><a href="#">Pemupukan</a></li>
+        <li class="hideInMobile"><a href="#">Jadwal</a></li>
+        <li class="hideInMobile"><a href="#">History</a></li>
+        <li class="menu-icon" id="menu-icon"><i class="ph ph-list"></i></li>
+      </ul>
+      <!-- SIDEBAR -->
+      <ul id="menu-side" class="sidebar">
+        <li class="menu-batal" id="menu-batal">
+          <i class="ph ph-x-circle"></i>
+        </li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="#">Penyiraman</a></li>
+        <li><a href="#">Pemupukan</a></li>
+        <li><a href="#">Jadwal</a></li>
+        <li><a href="#">History</a></li>
+      </ul>
+    </nav>
+    <!-- NAVBAR END -->
+    
+    <!-- persegi panjang -->
+    <div class="persegi-panjang"></div>
+    <!-- Notif succes -->
+    <div id="notif"><p class="text-notif">Succesfull</p></div>
+    <!-- TIMER -->
+    <div class="Timer1" id="JumTimer1L2P">00: 00</div>
+    <div class="Timer2" id="JumTimer2L2P">00: 00</div> 
+    
+    <!-- Content -->
+    <div class="text-container">
+      <h1 class="judul1">HARI JUMAT</h1>
+      <h2 class="judul2">PEMUPUKAN</h2>
+      <h3 class="judul3">LATERAL 2</h3>
+    </div>
+
+    <!-- KOTAK NOTIF -->
+    <div class="indikator-container">
+    <!-- KONDISI 1 -->
+    <div class="leteral">
+      <div class="circle"><i class="ph ph-plant"></i></div>
+      <p id="TextLate">Kondisi 1</p>
+      <div class="textTimer" id="JumTextJam1L2P">No Time</div>
+      <!-- SwitchK1 -->
+      <input type="checkbox" id="JumSwitch1L2P" class="check" disabled>
+      <label for="JumSwitch1L2P" class="switch"></label>
+    </div>
+    <!-- KONDISI 2 -->
+    <div class="leteral">
+    <div class="circle"><i class="ph ph-plant"></i></div>
+    <p>Kondisi 2</p>
+    <div class="textTimer" id="JumTextJam2L2P">No Time</div>
+    <!-- SwitchK2 -->
+    <input type="checkbox" id="JumSwitch2L2P" class="check" disabled>
+    <label for="JumSwitch2L2P" class="switch"></label>
+   </div>
+  </div>
+    <!-- Kotak Set Jam -->
+     <!-- Kondisi 1 -->
+    <div class="container-Jam" id="days">
+      <h1 class="textKondisi">Kondisi 1</h1>
+      <div class="box-set">
+        <label for="time" class="label">Time:</label>
+        <input 
+        class="input-set"
+        type="time"
+        id="JumTime1L2P"
+            required/>
+            <br>
+            <label for="durasi" class="label">Duration:</label>
+        <input 
+        class="input-set2"
+            type="number"
+            id="JumDurasi1L2P"
+            min="1"
+            required/>
+          <br>
+    </div>
+    <div class="area">
+      <button onclick="setHariJumatL2P('JumTime1L2P', 'JumDurasi1L2P', 'JumSwitch1L2P', 'JumTextJam1L2P','JumTimer1LiA')">Set Time</button>
+      <button id="ResetWaktu1">Reset</button>
+    </div>
+  </div>
+    <!-- Kondisi 2 -->
+    <div class="container-Jam2" id="days">
+      <h1 class="textKondisi">Kondisi 2</h1>
+      <div class="box-set">
+        <label for="time" class="label">Time:</label>
+        <input 
+        class="input-set"
+        type="time"
+        id="JumTime2L2P"
+            required/>
+            <br>
+            <label for="durasi" class="label">Duration:</label>
+        <input 
+        class="input-set2"
+            type="number"
+            id="JumDurasi2L2P"
+            min="1"
+            required/>
+          <br>
+    </div>
+    <div class="area">
+      <button onclick="setHariJumatL2P('JumTime2L2P', 'JumDurasi2L2P', 'JumSwitch2L2P', 'JumTextJam2L2P','JumTimer2L2P')">Set Time</button>
+      <button id="ResetWaktu2">Reset</button>
+    </div>
+  </div>
+  <script src="JumatL2P.js"></script>
+  </body>
+</html>

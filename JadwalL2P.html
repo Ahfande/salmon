@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="StyleJadwal.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul id="menu-list" class="hidden">
+        <i class="ph ph-house" id="iconHome"></i>
+        <li class="hideInMobile"><a href="#">Penyiraman</a></li>
+        <li class="hideInMobile"><a href="#">Pemupukan</a></li>
+        <li class="hideInMobile"><a href="#">Jadwal</a></li>
+        <li class="hideInMobile"><a href="#">History</a></li>
+        <li class="menu-icon" id="menu-icon"><i class="ph ph-list"></i></li>
+      </ul>
+      <!-- SIDEBAR -->
+      <ul id="menu-side" class="sidebar">
+        <li class="menu-batal" id="menu-batal">
+          <i class="ph ph-x-circle"></i>
+        </li>
+        <li><a href="/Html/Home.html">Home</a></li>
+        <li><a href="#">Penyiraman</a></li>
+        <li><a href="#">Pemupukan</a></li>
+        <li><a href="#">Jadwal</a></li>
+        <li><a href="#">History</a></li>
+      </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- persegi panjang -->
+    <div class="persegi-panjang"></div>
+    <h1>JADWAL HARIAN</h1>
+    <h1>PEMUPUKAN</h1>
+    <h1 class="jdl3">LATERAL 2</h1>
+    <!-- kotak indikator -->
+    <div class="indikator-container">
+      <!-- SENIN -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate1">Senin</p>
+      </div>
+      <!-- SELASA -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate2">Selasa</p>
+      </div>
+      <!-- RABU -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate3">Rabu</p>
+      </div>
+      <!-- KAMIS -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate4">Kamis</p>
+      </div>
+      <!-- JUM'AT -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate5">Jumat</p>
+      </div>
+      <!-- SABTU -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate6">Sabtu</p>
+      </div>
+      <!-- MINGGU -->
+      <div class="leteral">
+        <div class="circle"><i class="ph ph-plant"></i></div>
+        <p id="TextLate7">Minggu</p>
+      </div>
+    </div>
+
+
+
+    <!-- SCRIPT KHUSUS -->
+    <script src="/tesGlobal.js"></script>
+    <!-- SCRIPT LATERAL 1 -->
+    <script src="MingguL1P.js"></script>
+    <script src="MingguL1A.js"></script>
+    <script src="SeninL1P.js"></script>
+    <script src="SeninL1A.js"></script>
+    <script src="SelasaL1P.js"></script>
+    <script src="SelasaL1A.js"></script>
+    <script src="RabuL1P.js"></script>
+    <script src="RabuL1A.js"></script>
+    <script src="KamisL1P.js"></script>
+    <script src="KamisL1A.js"></script>
+    <script src="JumatL1P.js"></script>
+    <script src="JumatL1A.js"></script>
+    <script src="SabtuL1P.js"></script>
+    <script src="SabtuL1A.js"></script>
+    <!-- SCRIPT LATERAL 2 -->
+    <script src="MingguL2P.js"></script>
+    <script src="MingguL2A.js"></script>
+    <script src="SeninL2P.js"></script>
+    <script src="SeninL2A.js"></script>
+    <script src="SelasaL2P.js"></script>
+    <script src="SelasaL2A.js"></script>
+    <script src="RabuL2P.js"></script>
+    <script src="RabuL2A.js"></script>
+    <script src="KamisL2P.js"></script>
+    <script src="KamisL2A.js"></script>
+    <script src="JumatL2P.js"></script>
+    <script src="JumatL2A.js"></script>
+    <script src="SabtuL2P.js"></script>
+    <script src="SabtuL2A.js"></script>
+    
+    <script>
+      // NAVBAR
+      const HomeJL2P = document.getElementById("iconHome");
+      HomeJL2P.addEventListener("click", () => {
+        window.location.href = "Home.html";
+      });
+
+      //Pilih Hari
+      document.getElementById("TextLate1").addEventListener("click", () => {
+        window.location.href = "TimerSeninL2P.html";
+      });
+      document.getElementById("TextLate2").addEventListener("click", () => {
+        window.location.href = "TimerSelasaL2P.html";
+      });
+      document.getElementById("TextLate3").addEventListener("click", () => {
+        window.location.href = "TimerRabuL2P.html";
+      });
+      document.getElementById("TextLate4").addEventListener("click", () => {
+        window.location.href = "TimerKamisL2P.html";
+      });
+      document.getElementById("TextLate5").addEventListener("click", () => {
+        window.location.href = "TimerJumatL2P.html";
+      });
+      document.getElementById("TextLate6").addEventListener("click", () => {
+        window.location.href = "TimerSabtuL2P.html";
+      });
+      document.getElementById("TextLate7").addEventListener("click", () => {
+        window.location.href = "TimerMingguL2P.html";
+      });
+    </script>
+  </body>
+</html>

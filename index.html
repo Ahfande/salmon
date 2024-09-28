@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="StyleHome.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul id="menu-list" class="hidden">
+            <i class="ph ph-house" id="iconHome"></i>
+            <li class="hideInMobile"><a href="#">Penyiraman</a></li>
+            <li class="hideInMobile"><a href="#">Pemupukan</a></li>
+            <li class="hideInMobile"><a href="#">Jadwal</a></li>
+            <li class="hideInMobile"><a href="#">History</a></li>
+            <li class="menu-icon" id="menu-icon"><i class="ph ph-list"></i></li>
+        </ul>
+        <!-- SIDEBAR -->
+        <ul id="menu-side" class="sidebar">
+            <li class="menu-batal" id="menu-batal"><i class="ph ph-x-circle"></i></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Penyiraman</a></li>
+            <li><a href="#">Pemupukan</a></li>
+            <li><a href="#">Jadwal</a></li>
+            <li><a href="#">History</a></li>
+        </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- persegi panjang -->
+     <div class="persegi-panjang"></div>
+    <!-- Logo uniska -->
+     <div class="circle-logo"></div>
+    <!-- kotak indikator -->
+    <div class="kotak-container">
+     <!-- indikator 1 -->
+     <div class="kotak-1">
+        <div>
+            <i class="ph ph-calendar-blank" id="icon-tanggal"></i>
+            <h1 class="tanggal" id="tanggal"></h1>
+        </div>
+        <h2 class="hari" id="day"></h2>
+     </div>
+     <!-- indikator 2 -->
+     <div class="kotak-2">
+        <div class="phContainer">
+            <h1 id="temperature">0.00<p class="celcius">C</p></h1>
+        </div>
+            
+        <h2 class="active">Nilai Suhu</h2>
+     </div>
+     <!-- indikator 3 -->
+     <div class="kotak-3">
+        <i class="ph ph-clock" id="icon-jam"></i>
+        <h2 class="jam" id="textJam"></h2>
+     </div>
+    </div>
+
+    <!-- kotak indikator -->
+     <div class="indikator-container">
+        <!-- Leteral 1 -->
+        <div class="leteral">
+            <div class="textInput" id="VarInput1">
+                <input type="text" class="textInputVar" id="textInput1" name="text"/>
+                <div class="btnVar-container">
+                <div class="btnVar"><i class="ph ph-check-circle" id="check1"></i></div>
+                <div class="btnVar"><i class="ph ph-x-circle" id="cancel1"></i></div>
+                </div>
+            </div>
+            <div class="circle"><i class="ph ph-plant"></i></div>
+            <p id="TextLate1">Lateral 1</p>
+            <p id="textVar1">Variabel</p>
+        </div>
+        <!-- Leteral 2 -->
+        <div class="leteral">
+            <div class="textInput" id="VarInput2">
+                <input type="text" class="textInputVar" id="textInput2"/>
+                <div class="btnVar-container">
+                <div class="btnVar"><i class="ph ph-check-circle" id="check2"></i></div>
+                <div class="btnVar"><i class="ph ph-x-circle" id="cancel2"></i></div>
+                </div>
+            </div>
+            <div class="circle"><i class="ph ph-plant"></i></div>
+            <p id="TextLate2">Lateral 2</p>
+            <p id="textVar2">Variabel</p>
+        </div>
+        <!-- Leteral 3 -->
+        <div class="leteral">
+            <div class="textInput" id="VarInput3">
+                <input type="text" class="textInputVar" id="textInput3"/>
+                <div class="btnVar-container">
+                <div class="btnVar"><i class="ph ph-check-circle" id="check3"></i></div>
+                <div class="btnVar"><i class="ph ph-x-circle" id="cancel3"></i></div>
+                </div>
+            </div>
+            <div class="circle"><i class="ph ph-plant"></i></div>
+            <p id="TextLate3">Lateral 3</p>
+            <p id="textVar3">Variabel</p>
+        </div>
+        <!-- Leteral 4 -->
+        <div class="leteral">
+            <div class="textInput" id="VarInput4">
+                <input type="text" class="textInputVar" id="textInput4" required/>
+                <div class="btnVar-container">
+                <div class="btnVar"><i class="ph ph-check-circle" id="check4"></i></div>
+                <div class="btnVar"><i class="ph ph-x-circle" id="cancel4"></i></div>
+                </div>
+            </div>
+            <div class="circle"><i class="ph ph-plant"></i></div>
+            <p id="TextLate4">Lateral 4</p>
+            <p id="textVar4">Variabel</p>
+        </div>
+        <!-- Pop Up -->
+        <div class="pop-up" id="PopUp">
+            <!-- Lateral 1 -->
+            <div class="peny-pemu">
+                <p class="judul">LATERAL 1</p>
+                <div class="Set-timer"><p class="set" id="PenyiramanL1">PENYIRAMAN</p></div>
+                <div class="Set-jadwal"><p class="set" id="PemupukanL1">PEMUPUKAN</p></div>
+            </div>
+            <div class="circle-back"><i class="ph ph-x-circle" id="back"></i></i></div>
+        </div>
+
+        <!-- Lateral 2 -->
+        <div class="pop-up" id="PopUp2">
+            <div class="peny-pemu">
+                <p class="judul">LATERAL 2</p>
+                <div class="Set-timer"><p class="set" id="PenyiramanL2">PENYIRAMAN</p></div>
+                <div class="Set-jadwal"><p class="set" id="PemupukanL2">PEMUPUKAN</p></div>
+            </div>
+            <div class="circle-back"><i class="ph ph-x-circle" id="back2"></i></i></div>
+        </div>
+        <!-- Lateral 3 -->
+        <div class="pop-up" id="PopUp3">
+            <div class="peny-pemu">
+                <p class="judul">LATERAL 3</p>
+                <div class="Set-timer"><p class="set" id="PenyiramanL3">PENYIRAMAN</p></div>
+                <div class="Set-jadwal"><p class="set" id="PemupukanL3">PEMUPUKAN</p></div>
+            </div>
+            <div class="circle-back"><i class="ph ph-x-circle" id="back3"></i></i></div>
+        </div>
+    <!-- Lateral 4 -->
+        <div class="pop-up" id="PopUp4">
+            <div class="peny-pemu">
+                <p class="judul">LATERAL 4</p>
+                <div class="Set-timer"><p class="set" id="PenyiramanL4">PENYIRAMAN</p></div>
+                <div class="Set-jadwal"><p class="set" id="PemupukanL4">PEMUPUKAN</p></div>
+            </div>
+            <div class="circle-back"><i class="ph ph-x-circle" id="back4"></i></i></div>
+        </div>
+
+    <!-- BUTTON AIR UTAMA
+    <div class="btnAir-container">
+         <button class="btn-air"><i class="ph ph-power" id="btnAirOff"></i></button>
+         <button class="btn-air"><i class="ph ph-power" id="btnAirOn"></i></button>
+    </div> -->
+
+    <!-- SCRIPT KHUSUS -->
+    <script src="tesGlobal.js"></script>
+    <!-- SCRIPT LATERAL 1 -->
+    <script src="MingguL1P.js"></script>
+    <script src="MingguL1A.js"></script>
+    <script src="SeninL1P.js"></script>
+    <script src="SeninL1A.js"></script>
+    <script src="SelasaL1P.js"></script>
+    <script src="SelasaL1A.js"></script>
+    <script src="RabuL1P.js"></script>
+    <script src="RabuL1A.js"></script>
+    <script src="KamisL1P.js"></script>
+    <script src="KamisL1A.js"></script>
+    <script src="JumatL1P.js"></script>
+    <script src="JumatL1A.js"></script>
+    <script src="SabtuL1P.js"></script>
+    <script src="SabtuL1A.js"></script>
+    <!-- SCRIPT LATERAL 2 -->
+    <script src="MingguL2P.js"></script>
+    <script src="MingguL2A.js"></script>
+    <script src="SeninL2P.js"></script>
+    <script src="SeninL2A.js"></script>
+    <script src="SelasaL2P.js"></script>
+    <script src="SelasaL2A.js"></script>
+    <script src="RabuL2P.js"></script>
+    <script src="RabuL2A.js"></script>
+    <script src="KamisL2P.js"></script>
+    <script src="KamisL2A.js"></script>
+    <script src="JumatL2P.js"></script>
+    <script src="JumatL2A.js"></script>
+    <script src="SabtuL2P.js"></script>
+    <script src="SabtuL2A.js"></script>
+    <!-- SCRIPT TAMBAHAN -->
+    <script src="scriptHome.js"></script>
+</body>
+</html>
